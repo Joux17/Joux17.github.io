@@ -3,105 +3,96 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>CV de Thomas</title> <!-- apparait dans l'onglet -->
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
-
 	<body>
+		<header>
 
-		<div class="container">
+			<h1 class="main-title">Bienvenue sur mon CV</h1>
 
-			<header>
-				<nav class="navbar navbar-default navbar-inverse">
-				  <div class="container">
-				    <!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header navbar-brand">
-						Fajoux Thomas
-				    </div>
+			<!--<img src="images/tf.png" class="portrait" alt="photo de moi"> -->
 
-				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav">
-				        <li><a href="#">Accueil</a></li>
-				  		<li><a href="contact.html">Contact</a></li>
-				      </ul>
-				    </div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-				</nav>
-			</header>
+			<nav class="main-nav">
+                <ul class="niveau-1">
+                    <li><a href="#presentation" title="">Présentation</a></li>
+                    <li><a href="#info-legales" title="">Informations</a></li>
+                    <li><a href="#formation" title="">Formation</a></li>
+                    <li><a href="#experiences" title="">Expériences professionnelles</a></li>
+                    <li><a href="#competences" title="">Compétences</a></li>
+                </ul>
+            </nav>
+         <!--  <img src="images/tf.png" width=100 align="right" alt="photo de moi" class="photo_moi"> -->
+
+		</header>
+
+		
+
+		<main>
+			<section class="section-presentation section-important" id="presentation">
+				<h2 class="section-title" id="presentation">Présentation</h2>
+				<p>Je suis Thomas Fajoux, ingénieur en physique numérique. Passioné de foot, cinéma et poker.
+					J'ai effectué une licence en physique à l'université de Poitiers puis un master Physique-Informatique à Montpellier où j'ai pu y apprendre divers langages de programmation.</p>
+			</section>
+
+			<section class="section-information section-important" id="info-legales">
+				<h2 class="section-title" id="info-legales">Informations</h2>
+				<ul>
+					<li><strong>Date de naissance</strong> : 20 août 1990</li>
+					<li><strong>Permis</strong> : B</li>
+					<li><strong>Statut</strong> : coeur à prendre</li>
+				</ul>
+				
+			</section>
+
+			<section class="section-formation section-important" id="formation">
+				<h2 class="section-title">Formation</h2>
+				<ul>
+					<li><a href="http://www.master-physique.univ-montp2.fr/physique-informatique" class="nounderline"><strong>Master Physique-Informatique</strong></a> à l'université Montpellier 2 (34).<br>
+					Ce master est une formation qui offre une double compétence en physique et informatique ainsi qu’une spécialisation en physique numérique qui traite de la modélisation et de la simulation physique.</li>
+					<li><strong>Licence Physique</strong> à l'université de Poitiers (86)</li>
+					<li><strong>Baccalauréat scientifique</strong> au lycée Louis Audouin Dubreuil à St Jean d'Y (17)</li>
+				</ul>
+				
+			</section>
+
+			<section class="section-experiences section-important" id="experiences">
+				<h2 class="section-title">Expériences</h2>
+				<ul>
+					<li><strong>Mars 2014 - Août 2014 :</strong> stage sur l’étude des verres au Laboratoire Charles Coulomb de Montpellier. 
+						Développement de plusieurs programmes codés en Fortran. 
+						Extraction de données ainsi que le calcul et modélisation de spectres.</li>
+					<li><strong>Mars 2013 - Juin 2013 :</strong> projet tuteuré sur le développement d’un logiciel de simulation et d’ajustement de spectre InfraRouge. 
+						Ce programme était codé depuis 8 ans par les précédentes promotions. 
+						Ajout de fonctionnalités et correction de quelques bugs. 
+						Logiciel codé en JAVA sur l’environnement de développement NetBeans.</li>
+					<li><strong>Novembre 2012 - Janvier 2012 :</strong> réalisation d’un explorateur de fichier programmé en Python et HTML dans l’optique d’un cours de programmation Python.</li>
+				</ul>
+				
+			</section>
+
+			<section class="section-competences section-important" id="competences">
+				<h2 class="section-title">Compétences</h2>
+				<ul>
+					<li><strong>Programmation :</strong> JAVA, Python, Fortran, C, Shell</li>
+					<li><strong>Web Front-End: </strong> HTML, CSS, Javascript, AngularJS</li>
+					<li><strong>Logiciel de calcul :</strong> Matlab, Scilab, Octave</li>
+					<li><strong>OS :</strong> Windows, Linux</li>
+				</ul>
+				
+			</section>
 
 			
-			<main class="bg-info">
-				<div class="container">
-				<section class="container">
-					<article>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</article>
-				</section>
-
-				<section class="row">
-					<div class="col-md-3">
-						<img src="http://lorempixel.com/output/food-q-c-251-166-2.jpg" alt="point1" class="img-circle img-responsive ">
-						<h2 class="text-center">Food</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="col-md-3">
-						<img src="http://lorempixel.com/output/nature-q-c-251-166-5.jpg" alt="point2" class="img-circle img-responsive ">
-						<h2 class="text-center">Nature</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					<div class="col-md-3">
-						<img src="http://lorempixel.com/output/sports-q-c-251-166-6.jpg" alt="point3" class="img-circle img-responsive ">
-						<h2 class="text-center">Sport</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="col-md-3">
-						<img src="http://lorempixel.com/output/abstract-q-c-251-166-5.jpg" alt="point4" class="img-circle img-responsive ">
-						<h2 class="text-center">Abstract</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-
-				</section>
-				</div>
-			</main>
-			
-			<footer class="bg-warning "> 
-				<div class=" text-center container">
-					<a class="btn btn-primary" href="contact.html" role="button">Contactez-moi !</a>
-				</div>
-			</footer>
-
-			</div>
-
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		</div>
+		</main>
+		
+		<footer> 
+			<address>
+				<strong>Adresse</strong>
+				<span class="street">Boulevard Saint Aignan</span>
+				<span class="city">44100 Nantes</span>
+			</address>
+				<a href="https://fr.linkedin.com/pub/thomas-fajoux/85/390/5a5"><img src="images/linkedin.png" class="linkedin" alt="icone de linkedin"></a>
+				<a href="https://github.com/Joux17"><img src="images/GitHub.png" class="github" alt="icone de github"></a>
+		</footer>
 	</body>
 </html>
+
