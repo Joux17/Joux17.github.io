@@ -1,0 +1,30 @@
+<div class="container">
+	<h1>Jeu du 421</h1>
+
+	<button class="btn btn-primary" ng-click="app421Ctrl.lancer()">Lancer !</button>
+	<div>Nombre de lancés effectués : {{app421Ctrl.nbLance}}</div>
+
+	<table class="text-center" style="margin-top:20px;margin-bottom:20px">
+		<tr>
+			<td ng-repeat="de in app421Ctrl.des track by $index">
+				<img ng-src="{{de.img}}">
+			</td> <!-- track by permet de repeter les doublons -->
+		</tr>
+		<tr>
+			<td ng-repeat="de in app421Ctrl.des">
+				<!-- si le de n'est pas bloque -->
+				<button ng-if="!de.locked" class="btn btn-primary" ng-click="app421Ctrl.lock($index)">Lock</button> <!-- $index nous donnes l'index du lock qui va correspondre au de du tableau -->
+				<!-- si le de est bloque -->
+				<button ng-if="de.locked" class="btn btn-danger" ng-click="app421Ctrl.lock($index)">Lock</button> 
+			</td>
+		</tr>
+	</table>
+
+	<button class="btn btn-primary" ng-click="app421Ctrl.reset()">Reset</button>
+
+	<h3> Règles : </h3>
+	<p>Le but du jeu est de faire 421 avec les dés ( un 4, un 2 et un 1 dans n'importe quel ordre).
+		Lorsque l'on a un ou plusieurs de ces nombres on peut les bloquer grâce aux boutons "lock".
+		Le but du jeu est de faire le 421 en moins de lancés possibles.
+	</p>
+</div>
