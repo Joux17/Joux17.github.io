@@ -9,13 +9,13 @@
 		<script data-require="angular-route@1.4.3" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular-route.js"></script>
 		<script data-require="ui-bootstrap@*" data-semver="0.13.3" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.3/ui-bootstrap.min.js"></script>
 		<script src="app.js"></script>
-<!-- 		<link rel="stylesheet" href="style.css" /> -->
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body ng-app="myApp">
 		<nav class="navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Site Joux</a>
+					<a class="navbar-brand" href="#/">Site Joux</a>
 				</div>
 				<ul class="nav navbar-nav">
 					<li dropdown>
@@ -30,10 +30,18 @@
 				</ul>
 			</div>
 		</nav>
+		<ul class="dropdown-menu">
+			<li><a href="#/421">421</a></li>
+			<li><a href="#/morpion">Morpion</a></li>
+			<li><a href="#/pendu">Pendu</a></li>
+		</ul>
 		<div ng-view></div>
 
 		<!-- Main App JS -->
 		<script src="jeux/421/App421Controller.js"></script>
+		<script src="jeux/morpion/morpionController.js"></script>
+		<script src="jeux/pendu/penduController.js"></script>
+		<script src="home/cvController.js"></script>
 	</body>
 </html>
 

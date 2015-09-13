@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Jeu du pendu (2 joueurs)</h1>
+    <div ng-show="!penduCtrl.check">
+        <form class="form" ng-submit="penduCtrl.soummetreMot(mot)" novalidate>
+            <div class="form-group">
+                <label>Mot mystère:</label>
+                <input type="text" class="form-control" placeholder="Mot à faire deviner" ng-model="penduCtrl.mot" />
+                <button class="btn btn-default" type="submit" style="margin-top:10px;">Valider</button>
+            </div>
+        </form>
+    </div>
+    <div ng-show="penduCtrl.check">
+        <form class="form" ng-submit="penduCtrl.soummetreMot(mot)" novalidate>
+            <div class="form-group">
+                <label>Lettre:</label>
+                <input type="text" class="form-control" placeholder="Rentrer une lettre" ng-model="penduCtrl.lettre" />
+                <button class="btn btn-default" type="submit" style="margin-top:10px;">Try</button>
+            </div>
+        </form>
+        <img ng-src="{{penduCtrl.imgSrc}}">
+    </div>
+</div>

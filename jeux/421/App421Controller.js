@@ -7,6 +7,8 @@ angular.module('myApp')
 	self.des = [{value:6, img:imgSrc + "6.jpg",locked:false},{value:6, img:imgSrc + "6.jpg",locked:false},{value:6, img:imgSrc + "6.jpg",locked:false}];
 	self.nbLance = 0;
 
+	  console.log("controller app421");
+
 	self.lancer = function(){//fonction pour lancer les dés
 		var newValue=0;
 		console.log("fonction lancer");

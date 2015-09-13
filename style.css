@@ -1,0 +1,28 @@
+html {
+}
+
+body{
+	font-family: Helvetica, Verdana, Arial, sans-serif; /* modifie la police*/
+}
+
+ /***************** Titre CV*********************/
+.main-title{
+	text-align: center; /* pour centrer le texte*/
+	color:green;
+	font-family: Indie Flower, serif; /*police*/
+}
+/**********************************************/
+
+#table-morpion{
+	border-collapse: collapse;
+	margin : 0 auto ;
+    width: 60%; /*largeur de la table*/
+    height: 25em;
+}
+
+#table-morpion tbody tr td{
+	border : 2px solid black;
+	text-align: center;
+	vertical-align : middle;
+	width: 20%;
+}

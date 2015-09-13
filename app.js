@@ -3,6 +3,11 @@ angular.module('myApp', ['ui.bootstrap','ngRoute']);
 angular.module('myApp')
 .config(function ($routeProvider){          
     $routeProvider
+    .when("/", {
+        templateUrl: "home/template/cv.html",
+        controller: "cvController",
+        controllerAs: "cvCtrl"
+    })
     .when("/421", {
         templateUrl: "jeux/421/template/App421.html",
         controller: "App421Controller",
@@ -18,5 +23,5 @@ angular.module('myApp')
         controller: "PenduController",
         controllerAs: "penduCtrl"
     })
-    .otherwise("/421");
+    .otherwise("/");
 });
