@@ -15,14 +15,10 @@ body{
 
 #table-morpion{
 	border-collapse: collapse;
-	margin : 0 auto ;
-    width: 60%; /*largeur de la table*/
-    height: 25em;
 }
 
 #table-morpion tbody tr td{
 	border : 2px solid black;
-	text-align: center;
-	vertical-align : middle;
-	width: 20%;
+	width: 10em;
+	height : 10em;
 }
