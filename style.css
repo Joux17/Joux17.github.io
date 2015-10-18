@@ -5,6 +5,14 @@ body{
 	font-family: Helvetica, Verdana, Arial, sans-serif; /* modifie la police*/
 }
 
+.section-title{
+	border-bottom: 1px solid #EEE; /* bordure sous le titre de section*/
+}
+
+.footer-cv{
+	text-align: center;
+}
+
  /***************** Titre CV*********************/
 .main-title{
 	text-align: center; /* pour centrer le texte*/
@@ -15,6 +23,7 @@ body{
 
 #table-morpion{
 	border-collapse: collapse;
+	text-align: center;
 }
 
 #table-morpion tbody tr td{

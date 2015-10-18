@@ -1,22 +1,27 @@
 <div class="container">
     <h1>Jeu du pendu (2 joueurs)</h1>
-    <div ng-show="!penduCtrl.check">
-        <form class="form" ng-submit="penduCtrl.soummetreMot(mot)" novalidate>
+    <div ng-if="!penduCtrl.check" ng-submit="penduCtrl.soummetreMot(mot)">
+        <form class="form" >
             <div class="form-group">
                 <label>Mot mystère:</label>
-                <input type="text" class="form-control" placeholder="Mot à faire deviner" ng-model="penduCtrl.mot" />
+                <input type="text" class="form-control" placeholder="Mot à faire deviner" ng-model="mot" />
                 <button class="btn btn-default" type="submit" style="margin-top:10px;">Valider</button>
             </div>
         </form>
     </div>
-    <div ng-show="penduCtrl.check">
-        <form class="form" ng-submit="penduCtrl.soummetreMot(mot)" novalidate>
+    <div ng-if="penduCtrl.check">
+        <form class="form" ng-submit="penduCtrl.essai(lettre)" novalidate>
             <div class="form-group">
                 <label>Lettre:</label>
-                <input type="text" class="form-control" placeholder="Rentrer une lettre" ng-model="penduCtrl.lettre" />
+                <input type="text" class="form-control" placeholder="Rentrer une lettre" ng-model="lettre" />
                 <button class="btn btn-default" type="submit" style="margin-top:10px;">Try</button>
             </div>
         </form>
         <img ng-src="{{penduCtrl.imgSrc}}">
+
+        <span ng-repeat="char in penduCtrl.tabMot">
+            <span ng-if="char.visible">{{char.letter}}</span>
+            <span ng-if="!char.visible">_</span>
+        </span>
     </div>
 </div>
