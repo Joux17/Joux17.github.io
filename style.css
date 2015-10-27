@@ -5,6 +5,18 @@ body{
 	font-family: Helvetica, Verdana, Arial, sans-serif; /* modifie la police*/
 }
 
+.titre-jeu{
+	text-align: center;
+	font-family: Indie Flower, serif; /*police*/
+	border-bottom-style: double;
+	margin : auto;
+	width:50%;
+}
+
+.centrer-table{
+	text-align: center;
+}
+
 .section-title{
 	border-bottom: 1px solid #EEE; /* bordure sous le titre de section*/
 }
@@ -21,9 +33,11 @@ body{
 }
 /**********************************************/
 
+ /***************** Morpion style*********************/
 #table-morpion{
 	border-collapse: collapse;
-	text-align: center;
+	display: inline;
+	width:70%;
 }
 
 #table-morpion tbody tr td{
@@ -31,3 +45,32 @@ body{
 	width: 10em;
 	height : 10em;
 }
+
+.signe-morpion{
+	font-size: 7em;
+}
+
+/*************************421************************ */
+.bouton-lancer{
+	padding: 13px;
+	text-transform: uppercase;
+}
+
+.centrer-bouton{
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.table-421{
+	margin: 0 auto;
+	width:50%;
+	margin-bottom: 40px;
+}
+
+.nb-lancer{
+	margin-top:7px;
+	float:right;
+	font-weight: bold;
+}
+
+/*************************PENDU*****************/

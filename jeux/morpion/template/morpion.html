@@ -1,13 +1,17 @@
 <div class="container">
-    <h1>Jeu du morpion (2 joueurs)</h1>
+	<br/>
+    <h1 class="titre-jeu">Jeu du morpion (2 joueurs)</h1>
+    <br/>
     <div class="container">
-	    <table id="table-morpion">
-	    	<tbody>
-				<tr ng-repeat="row in morpionCtrl.plateau track by $index">
-					<td ng-repeat="col in row track by $index" ng-click="morpionCtrl.action($parent.$index,$index)">{{morpionCtrl.plateau[$parent.$index][$index]}}</td>
-				</tr>
-			</tbody>
-	    </table>
+    	<div class="centrer-table">
+		    <table id="table-morpion">
+		    	<tbody>
+					<tr ng-repeat="row in morpionCtrl.plateau track by $index">
+						<td ng-repeat="col in row track by $index" ng-click="morpionCtrl.action($parent.$index,$index)"><span class="signe-morpion">{{morpionCtrl.plateau[$parent.$index][$index]}}</span></td>
+					</tr>
+				</tbody>
+		    </table>
+		</div>
 	</div>
 
     <button class="btn btn-primary center-block" style="margin-top:10px;" ng-click="morpionCtrl.reset()">Reset</button>

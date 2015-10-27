@@ -27,7 +27,7 @@ angular.module('myApp')
 			self.nbAnim=0;
 
 		}
-	}
+	};
 
 	self.lancer = function(){//fonction pour lancer les dés
 		if(!self.des[0].locked || !self.des[1].locked || !self.des[2].locked){

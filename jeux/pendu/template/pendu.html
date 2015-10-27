@@ -1,5 +1,7 @@
 <div class="container">
-    <h1>Jeu du pendu (2 joueurs)</h1>
+    <br/>
+    <h1 class="titre-jeu">Jeu du pendu (2 joueurs)</h1>
+    <br/>
     <div ng-if="!penduCtrl.check" ng-submit="penduCtrl.soummetreMot(mot)">
         <form class="form" >
             <div class="form-group">
@@ -9,12 +11,13 @@
             </div>
         </form>
     </div>
-    <div ng-if="penduCtrl.check">
+
+    <div ng-if="penduCtrl.check && !penduCtrl.isDisabled">
         <form class="form" ng-submit="penduCtrl.essai(lettre)" novalidate>
             <div class="form-group">
                 <label>Lettre:</label>
                 <input type="text" class="form-control" placeholder="Rentrer une lettre" ng-model="lettre" />
-                <button class="btn btn-default" type="submit" style="margin-top:10px;">Try</button>
+                <button class="btn btn-primary" type="submit" style="margin-top:10px;">Try</button>
             </div>
         </form>
         <img ng-src="{{penduCtrl.imgSrc}}">
@@ -24,4 +27,10 @@
             <span ng-if="!char.visible">_</span>
         </span>
     </div>
+
+    <div ng-if="penduCtrl.isDisabled">
+        LOOSER !!!!
+        <img ng-src="{{penduCtrl.imgSrcPerdu}}">
+    </div>
+
 </div>
