@@ -19,9 +19,14 @@ angular.module('myApp')
         controllerAs: "morpionCtrl"
     })
     .when("/pendu", {
-      templateUrl: "jeux/pendu/template/pendu.html",
+        templateUrl: "jeux/pendu/template/pendu.html",
         controller: "PenduController",
         controllerAs: "penduCtrl"
+    })
+    .when("/pong", {
+        templateUrl: "jeux/pong/template/pong.html",
+        controller: "PongController",
+        controllerAs: "pongCtrl"
     })
     .otherwise("/");
 });

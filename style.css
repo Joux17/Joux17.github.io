@@ -18,11 +18,13 @@ body{
 }
 
 .section-title{
-	border-bottom: 1px solid #EEE; /* bordure sous le titre de section*/
+	border-bottom: 1px solid #C07171; /* bordure sous le titre de section*/
 }
 
 .footer-cv{
 	text-align: center;
+	border-top: 1px solid;
+	padding: 5px;
 }
 
  /***************** Titre CV*********************/
@@ -74,3 +76,8 @@ body{
 }
 
 /*************************PENDU*****************/
+
+/***********************PONG*********************/
+.canvas_pong{
+	border : 2px solid;
+}
