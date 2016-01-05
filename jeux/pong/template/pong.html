@@ -1,6 +1,11 @@
 <div class="container">
     <br/>
     <h1 class="titre-jeu">Pong (2 joueurs)</h1>
+    <br/>
+    <button class="btn btn-primary bouton-demarrer-pong" ng-disabled="!pongCtrl.disableButton" ng-click="pongCtrl.demarrerPartie()">Start !</button>
+    <button class="btn btn-primary bouton-arreter-pong" ng-disabled="pongCtrl.disableButton" ng-click="pongCtrl.arreterPartie()">Stop !</button>
+    <br/>
+    <canvas id="canvas-pong" width="750" height="350" class="canvas_pong"></canvas>
 
-    <canvas id="canvas-pong" width="500" height="500" class="canvas_pong"></canvas>
+
 </div>
