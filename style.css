@@ -80,6 +80,13 @@ body{
 /***********************PONG*********************/
 .canvas_pong{
 	border : 2px solid;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.bouton-pong{
+	position: center;
 }
 
 .bouton-demarrer-pong{
