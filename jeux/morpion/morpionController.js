@@ -14,10 +14,15 @@ angular.module('myApp')
 				}
                 self.plateau[row][col]=self.mark;
             }
+            isVictoire();
         };
 
         self.reset = function() {
 			self.plateau = [['', '', ''],['', '', ''],['', '', '']]; //plateau de jeu du morpion (3x3)
             self.mark = 'X';
         };
+
+        var isVictoire = function(){
+            //TODO codé conition victoire morpion
+        };  
     });

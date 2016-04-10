@@ -25,6 +25,7 @@ angular.module('myApp')
 			$interval.cancel(self.boucle);
 			self.boucle = undefined;
 			self.nbAnim=0;
+			is421();
 
 		}
 	};
@@ -57,6 +58,19 @@ angular.module('myApp')
 		self.nbLance = 0;
 		self.nbAnim=0;
 	};
+
+	var is421 = function () {
+		if(    (self.des[0].value===4 && self.des[1].value===2 && self.des[2].value === 1)
+			|| (self.des[0].value===2 && self.des[1].value===1 && self.des[2].value === 4)
+			|| (self.des[0].value===1 && self.des[1].value===4 && self.des[2].value === 2)
+			|| (self.des[0].value===4 && self.des[1].value===1 && self.des[2].value === 2)
+			|| (self.des[0].value===2 && self.des[1].value===4 && self.des[2].value === 1)
+			|| (self.des[0].value===1 && self.des[1].value===2 && self.des[2].value === 4)
+			)
+		{
+			alert("C'est gagné !!");
+		}
+	}
 
 
 	
