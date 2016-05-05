@@ -18,7 +18,10 @@ body{
 }
 
 .section-title{
-	border-bottom: 1px solid #C07171; /* bordure sous le titre de section*/
+	border-bottom: 3px solid black; /* bordure sous le titre de section*/
+	font-size: 30px;
+	text-transform: uppercase;
+	padding-left: 10px;
 }
 
 .footer-cv{
@@ -27,11 +30,20 @@ body{
 	padding: 5px;
 }
 
+.message-under-title {
+	margin-bottom: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: large;
+	text-align: center;
+}
+
  /***************** Titre CV*********************/
 .main-title{
 	text-align: center; /* pour centrer le texte*/
 	color:green;
 	font-family: Indie Flower, serif; /*police*/
+	font-size: 40px;
 }
 /**********************************************/
 
@@ -54,18 +66,18 @@ body{
 
 /*************************421************************ */
 .bouton-lancer{
-	padding: 13px;
+	padding: 12px;
 	text-transform: uppercase;
 }
 
 .centrer-bouton{
 	text-align: center;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 .table-421{
 	margin: 0 auto;
-	width:50%;
+	width:35%;
 	margin-bottom: 40px;
 }
 
@@ -73,9 +85,19 @@ body{
 	margin-top:7px;
 	float:right;
 	font-weight: bold;
+	font-size : 18px;
 }
 
 /*************************PENDU*****************/
+.pendu {
+	font-size: 20px;
+}
+
+.tableau-erreur{
+	display: inline-block;
+	padding-left: 30%;
+}
+
 
 /***********************PONG*********************/
 .canvas_pong{

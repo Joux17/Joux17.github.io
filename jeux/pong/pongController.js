@@ -19,9 +19,9 @@ angular.module('myApp')
 
         var myInterval; 
         var posX1 = 10;
-        var posY1 = 90;
+        var posY1 = 150;
         var posX2 = canvas.width - 20;
-        var posY2 = 90;
+        var posY2 = 150;
         var longueurJoueur = 70;
         var largeurJoueur = 10;
 

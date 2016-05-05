@@ -23,6 +23,6 @@ angular.module('myApp')
         };
 
         var isVictoire = function(){
-            //TODO codé conition victoire morpion
+            //TODO codé condition victoire morpion
         };  
     });

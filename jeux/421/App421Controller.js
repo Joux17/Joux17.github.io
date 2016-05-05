@@ -7,6 +7,7 @@ angular.module('myApp')
 	self.des = [{value:6, img:imgSrc + "6.jpg",locked:false},{value:6, img:imgSrc + "6.jpg",locked:false},{value:6, img:imgSrc + "6.jpg",locked:false}];
 	self.nbLance = 0;
 	self.nbAnim=0;
+	self.isGagne = false;
 
 	self.effetLancer = function()
 	{
@@ -25,7 +26,7 @@ angular.module('myApp')
 			$interval.cancel(self.boucle);
 			self.boucle = undefined;
 			self.nbAnim=0;
-			is421();
+			self.isGagne = is421();
 
 		}
 	};
@@ -68,10 +69,8 @@ angular.module('myApp')
 			|| (self.des[0].value===1 && self.des[1].value===2 && self.des[2].value === 4)
 			)
 		{
-			alert("C'est gagné !!");
+			return true;
 		}
-	}
-
-
+	};
 	
 });

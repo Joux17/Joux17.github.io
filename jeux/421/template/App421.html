@@ -2,9 +2,13 @@
 	<br/>
 	<h1 class="titre-jeu">Jeu du 421</h1>
 	<br/>
-		<div class="centrer-bouton">
+		<div class="centrer-bouton" ng-show="!app421Ctrl.isGagne">
 			<button class="btn btn-primary bouton-lancer" ng-click="app421Ctrl.lancer()">Lancer !</button>
 		</div>
+		<div class="message-under-title" ng-show="app421Ctrl.isGagne">
+			C'est gagné !!
+		</div>
+
 		<div class="table-responsive">
 			<table class="text-center table-421">
 				<tr>

@@ -1,22 +1,25 @@
-<div class="container">
+<div class="container pendu">
     <br/>
     <h1 class="titre-jeu">Jeu du pendu (2 joueurs)</h1>
     <br/>
+
+    <div class="message-under-title" ng-show="penduCtrl.message">{{penduCtrl.message}}</div>
+
     <div ng-if="!penduCtrl.check" ng-submit="penduCtrl.soummetreMot(mot)">
         <form class="form" >
             <div class="form-group">
                 <label>Mot mystère:</label>
                 <input type="text" class="form-control" placeholder="Mot à faire deviner" ng-model="mot" />
-                <button class="btn btn-default" type="submit" style="margin-top:10px;">Valider</button>
+                <button class="btn btn-primary" type="submit" style="margin-top:10px;">Valider</button>
             </div>
         </form>
     </div>
 
     <div ng-if="penduCtrl.check && !penduCtrl.isDisabled">
-        <form class="form" ng-submit="penduCtrl.essai(lettre)" novalidate>
+        <form class="form" ng-submit="penduCtrl.essai(penduCtrl.lettre)" novalidate>
             <div class="form-group">
                 <label>Lettre:</label>
-                <input type="text" class="form-control" placeholder="Rentrer une lettre" ng-model="lettre" />
+                <input type="text" class="form-control" placeholder="Rentrer une lettre" ng-model="penduCtrl.lettre" />
                 <button class="btn btn-primary" type="submit" style="margin-top:10px;">Try</button>
             </div>
         </form>
@@ -26,6 +29,8 @@
             <span ng-if="char.visible">{{char.letter}}</span>
             <span ng-if="!char.visible">_</span>
         </span>
+
+        <div class="tableau-erreur" ng-hide="">{{penduCtrl.tabLettreErreur}}</div>
     </div>
 
     <div ng-if="penduCtrl.isDisabled">
