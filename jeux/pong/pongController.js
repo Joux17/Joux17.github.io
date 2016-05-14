@@ -1,5 +1,6 @@
 angular.module('myApp')
     .controller('PongController', function(){
+        'use strict';
         var self = this;
 
         //l'origine du canvas est dans le coin superieur gauche
@@ -65,17 +66,18 @@ angular.module('myApp')
 
             conditionRebondBord();
             conditionRebondSurJoueur();
-            // if(centreBalleX - rayon < posX1 + 5){
-            //     resetPos();
-            //     self.pointJoueur1++;
-            //     console.log(self.pointJoueur1);
-            // }
 
-            // if(centreBalleX + rayon > posX2){
-            //     self.pointJoueur2++;
-            //     console.log(self.pointJoueur2);
-            //     resetPos();
-            // }
+            if(centreBalleX - rayon < posX1 + 5){
+                resetPos();
+                self.pointJoueur1++;
+               
+            }
+
+            if(centreBalleX + rayon > posX2+20){
+                self.pointJoueur2++;
+                console.log(self.pointJoueur2);
+                resetPos();
+            }
         }
 
 
@@ -106,9 +108,6 @@ angular.module('myApp')
             }
             
         };
-
-       
-
 
         //Cette fonction, selon le type de navigateur, retourne l'objet 'event' approprié.
         function checkEventObj ( _event_ ){
@@ -157,7 +156,6 @@ angular.module('myApp')
             centreBalleX = 40;
             centreBalleY = 40;
             rayon = 10;
-
         };
 
         var conditionRebondBord = function (){
@@ -180,6 +178,18 @@ angular.module('myApp')
                 vitesseBalleX = -1.05*vitesseBalleX;
                 console.log("pong");
             }
+        };
+
+        self.reset = function(){
+            resetPos();
+
+            self.pointJoueur1 = 0; 
+            self.pointJoueur2 = 0;
+
+            self.winJoueur1 = false;
+            self.winJoueur2 = false;
+
+            init();
         };
 
     });

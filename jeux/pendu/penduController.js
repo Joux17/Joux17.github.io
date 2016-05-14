@@ -18,7 +18,7 @@ angular.module('myApp')
         self.isDisabled=false;
 
         self.soummetreMot = function(mot){
-            if(mot === null || mot === undefined || mot===''){
+            if(isStringEmpty(mot)){
                 self.message = "Veuillez renseigner un mot.";
             } else {
                 self.mot=mot;
@@ -53,6 +53,10 @@ angular.module('myApp')
                 self.isDisabled=true;
                 self.imgSrcPerdu="http://www.pour-enfants.fr/jeux-vacances/dessins-jeu-pendu/dessin-jeu-pendu-perdu-.gif";
             }
+        };
+
+        self.disableTry = function(lettre) {
+           return isStringEmpty(lettre);
         };
 
         //TODO

@@ -19,8 +19,8 @@
         <form class="form" ng-submit="penduCtrl.essai(penduCtrl.lettre)" novalidate>
             <div class="form-group">
                 <label>Lettre:</label>
-                <input type="text" class="form-control" placeholder="Rentrer une lettre" ng-model="penduCtrl.lettre" />
-                <button class="btn btn-primary" type="submit" style="margin-top:10px;">Try</button>
+                <input type="text" class="form-control" placeholder="Rentrer une lettre" maxlength="1" ng-model="penduCtrl.lettre" />
+                <button class="btn btn-primary" ng-disabled='penduCtrl.disableTry(penduCtrl.lettre);' type="submit" style="margin-top:10px;">Try</button>
             </div>
         </form>
         <img ng-src="{{penduCtrl.imgSrc}}">
