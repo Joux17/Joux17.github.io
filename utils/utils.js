@@ -1,4 +1,5 @@
 //fichier contenant les methodes utiles au js
+//utiliser Lodash
 
 var isStringEmpty = function(mot){
 	var empty = false;
