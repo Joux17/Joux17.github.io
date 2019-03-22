@@ -41,8 +41,6 @@ body{
  /***************** Titre CV*********************/
 .main-title{
 	text-align: center; /* pour centrer le texte*/
-	color:green;
-	font-family: Indie Flower, serif; /*police*/
 	font-size: 40px;
 }
 /**********************************************/
